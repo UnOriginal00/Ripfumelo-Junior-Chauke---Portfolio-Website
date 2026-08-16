@@ -26,11 +26,9 @@ my software development experience, technical skills, and projects.
 
 ## Project Structure
 
-Brief explanation of how the React project is organised.
+.
 
 ## Getting Started
-
-Explain how someone can run it locally:
 
 npm install
 npm run dev
@@ -41,12 +39,10 @@ npm run build
 
 ## Deployment
 
-Explain that the production build is deployed through GitHub Pages.
+This will be hosted via GitHub Pages
 
 ## Author
 
-Junior Chauke
+Ripfumelo Junior Chauke
 
-[Portfolio]
-[GitHub]
-[LinkedIn]
+https://www.linkedin.com/in/ripfumelo-junior-chauke-11584a33b/
