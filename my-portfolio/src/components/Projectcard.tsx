@@ -1,18 +1,18 @@
 import React from 'react'
+import { projects, type Project } from '../data/projectsData'
 
 type Props = {
 
-  title: string
-  shortDescription : string
-  image: string
+  project:Project
 
 }
 
-const Projectcard = (props: Props) => {
+const Projectcard = ({project}: Props) => {
   return (
-    <div>
-        <h2>{props.title}</h2>
-        <p>{props.shortDescription}</p>
+    <div className='flex border'>
+        <h2>{project.title}</h2>
+        <p>{project.shortDescription}</p>
+        <img src={project.image}/>
     </div>
   )
 }

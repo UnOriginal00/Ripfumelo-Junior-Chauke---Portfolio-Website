@@ -1,20 +1,20 @@
 import React from 'react'
-import Projectcard from '../components/Projectcard'
-import Header from '../components/header'
+import Header from '../components/Header'
+import Projects from '../components/Projects'
 
 type Props = {}
 
 const projectpage = (props: Props) => {
   return (
     <>
-
       <Header/>
 
-      <Projectcard 
-        title="HackJam" 
-        shortDescription="Hello"
-        image=''/>
-      </>
+      <main>
+        <Projects/>
+      </main>
+
+      
+    </>
   )
 }
 
