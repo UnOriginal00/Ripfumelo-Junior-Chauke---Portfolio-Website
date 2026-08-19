@@ -1,9 +1,9 @@
+import { ArrowLeft } from 'lucide-react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { projects } from '../data/projectsData'
 
-type Props = {}
 //This page is responsible for displaying the extended data of the projects from Projectcard
-const Projectdetailpage = (props: Props) => {
+const Projectdetailpage = () => {
   const { slug } = useParams()
   const project = projects.find((item) => item.slug === slug)
 
@@ -12,8 +12,9 @@ const Projectdetailpage = (props: Props) => {
   }
 
   return (
-    <main className='mx-auto max-w-6xl px-6 py-10 lg:py-12'>
-      <Link to='/' className='text-sm font-bold text-oceon-deep hover:text-pumpkin-spice'>
+    <main className='mx-auto max-w-6xl px-6 py-10 lg:pl-24 lg:pr-6 lg:py-12'>
+      <Link to='/' className='inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-oceon-deep shadow-md shadow-oceon-deep/10 transition hover:-translate-x-1 hover:bg-fresh-sky hover:text-white'>
+        <ArrowLeft size={17} strokeWidth={2.5} aria-hidden='true' />
         Back to projects
       </Link>
 
@@ -21,9 +22,9 @@ const Projectdetailpage = (props: Props) => {
 
       <div className='mt-6 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start'>
         <section className='grid grid-cols-2 gap-3' aria-label={`${project.title} images`}>
-          <img className='col-span-2 aspect-[16/9] w-full rounded border-2 border-fresh-sky object-cover' src={project.gallery[0]} alt={`${project.title} main screenshot`} />
+          <img className='col-span-2 aspect-[16/9] w-full rounded-2xl object-cover shadow-lg shadow-oceon-deep/15' src={project.gallery[0]} alt={`${project.title} main screenshot`} />
           {project.gallery.slice(1, 3).map((image, index) => (
-            <img key={image} className='aspect-[4/3] w-full rounded border-2 border-tropical-teal object-cover' src={image} alt={`${project.title} screenshot ${index + 2}`} />
+            <img key={image} className='aspect-[4/3] w-full rounded-2xl object-cover shadow-md shadow-tropical-teal/20' src={image} alt={`${project.title} screenshot ${index + 2}`} />
           ))}
         </section>
 

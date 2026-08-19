@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-oceon-deep:#2364AA;
-  --color-fresh-sky: #3DA5D9;
-  --color-tropical-teal: #73BFB8;
-  --color-school-bus-yellow: #FEC601;
-  --color-pumpkin-spice: #EA7317;
+  --color-oceon-deep: #003554;
+  --color-fresh-sky: #00A6FB;
+  --color-tropical-teal: #0582CA;
+  --color-school-bus-yellow: #FFFFFF;
+  --color-pumpkin-spice: #006494;
 }
 
 html {
@@ -18,11 +19,46 @@ html::-webkit-scrollbar {
 
 body {
   min-width: 320px;
-  background: #f3fafb;
-  color: #102a43;
+  background: #ffffff;
+  color: #003554;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
 }
 
 ::selection {
-  background: #fec601;
-  color: #102a43;
+  background: #00A6FB;
+  color: #ffffff;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-reveal {
+  animation: sectionReveal 700ms ease-out both;
 }
