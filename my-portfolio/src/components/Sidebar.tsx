@@ -1,12 +1,12 @@
 const Sidebar = () => {
   return (
-    <aside className='group fixed left-4 top-1/2 z-10 -translate-y-1/2 overflow-hidden rounded-2xl border border-slate-300 bg-white shadow transition-all duration-200 w-14 hover:w-36'>
+    <aside className='group fixed left-4 top-1/2 z-10 w-14 -translate-y-1/2 overflow-hidden rounded-2xl border border-tropical-teal bg-white shadow transition-all duration-200 hover:w-36'>
       <nav className='flex flex-col items-center gap-2 p-2' aria-label='Social links'>
         <a
           href='https://github.com/UnOriginal00'
           target='_blank'
           rel='noreferrer'
-          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium hover:bg-slate-100'
+          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium text-oceon-deep hover:bg-fresh-sky hover:text-white'
           aria-label='GitHub'
         >
           <svg className='h-5 w-5 shrink-0' viewBox='0 0 24 24' fill='currentColor' aria-hidden='true'>
@@ -19,7 +19,7 @@ const Sidebar = () => {
           href='https://www.linkedin.com/in/ripfumelo-junior-chauke-11584a33b/'
           target='_blank'
           rel='noreferrer'
-          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium hover:bg-slate-100'
+          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium text-oceon-deep hover:bg-fresh-sky hover:text-white'
           aria-label='LinkedIn'
         >
           <svg className='h-5 w-5 shrink-0' viewBox='0 0 24 24' fill='currentColor' aria-hidden='true'>
@@ -30,7 +30,7 @@ const Sidebar = () => {
 
         <a
           href='mailto:pfumichauke4@gmail.com'
-          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium hover:bg-slate-100'
+          className='flex h-10 w-full items-center gap-3 rounded-xl px-3 text-sm font-medium text-oceon-deep hover:bg-fresh-sky hover:text-white'
           aria-label='Email'
         >
           <svg className='h-5 w-5 shrink-0' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' aria-hidden='true'>

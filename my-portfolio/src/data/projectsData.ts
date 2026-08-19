@@ -19,7 +19,7 @@ export const projects:Project[] = [
         slug: "hackjam",
         title: "HackJam",
         shortDescription: "A full-stack application...",
-        image: "/hackjam.png",
+        image: "/images/project-thumbnails/hackjam.svg",
         description: "HackJam is a full-stack application for collaborating on project ideas and building prototypes.",
             gallery:[
         "/images/hackjam-1.png",
@@ -31,7 +31,7 @@ export const projects:Project[] = [
         slug: "fix-a-habit",
         title: "Fix-a-Habit",
         shortDescription: "A habit tracking application...",
-        image: "/habit.png",
+        image: "/images/project-thumbnails/fix-a-habit.svg",
         description: "Fix-a-Habit helps users track their daily habits and build more consistent routines.",
             gallery:[
         "/images/hackjam-1.png",
@@ -43,7 +43,7 @@ export const projects:Project[] = [
         slug: "weather-dashboard",
         title: "Weather Dashboard application",
         shortDescription: "A WPF application...",
-        image: "/loan.png",
+        image: "/images/project-thumbnails/weather-dashboard.svg",
         description: "A WPF desktop application that presents weather information in a simple dashboard.",
         gallery:[
         "/images/hackjam-1.png",

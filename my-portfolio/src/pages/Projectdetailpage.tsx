@@ -9,12 +9,12 @@ const Projectdetailpage = (props: Props) => {
   const project = projects.find((item) => item.slug === slug)
 
   if (!project) {
-    return <Navigate to='/projects' replace />
+    return <Navigate to='/' replace />
   }
 
   return (
     <div className='p-8'>
-      <Link to='/projects'>Back to projects</Link>
+      <Link to='/'>Back to projects</Link>
       <h1 className='mt-4 text-4xl font-bold'>{project.title}</h1>
       <img className='mt-4 max-w-2xl' src={project.image} alt={project.title} />
       <p className='mt-4 max-w-2xl'>{project.description}</p>

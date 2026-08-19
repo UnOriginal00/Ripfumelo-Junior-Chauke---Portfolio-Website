@@ -7,3 +7,11 @@
   --color-school-bus-yellow: #FEC601;
   --color-pumpkin-spice: #EA7317;
 }
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

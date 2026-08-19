@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { projects, type Project } from '../data/projectsData'
+import type { Project } from '../data/projectsData'
 
 type Props = {
 
@@ -10,19 +9,20 @@ type Props = {
 
 const Projectcard = ({project}: Props) => {
   return (
-    <Link to={`/projects/${project.slug}`} className='flex flex-col 
+    <Link to={`/projects/${project.slug}`} className='group relative flex w-full flex-col overflow-hidden 
                     border-2 rounded 
-                    min-h-50
                   border-fresh-sky 
                     shadow 
                     hover:scale-103 hover:cursor-pointer 
                     transition 
                     duration-100'>
-        <div className='mt-auto'>
-          <img src={project.image}/>
-          <h2 className=''>{project.title}</h2>
-          <p className=''>{project.shortDescription}</p>
+      <div className='relative min-h-[18rem] w-full'>
+        <img className='absolute inset-0 h-full w-full object-cover' src={project.image} alt={`${project.title} project thumbnail`} />
+        <div className='absolute inset-x-0 bottom-0 bg-white/95 p-4 text-left transition-all duration-300 group-hover:inset-y-0 group-hover:flex group-hover:flex-col group-hover:justify-start'>
+          <h2 className='font-bold text-oceon-deep'>{project.title}</h2>
+            <p className='mt-0 max-h-0 overflow-hidden text-sm opacity-0 transition-all duration-300 group-hover:mt-3 group-hover:max-h-24 group-hover:opacity-100'>{project.shortDescription}</p>
         </div>
+      </div>
     </Link>
   )
 }

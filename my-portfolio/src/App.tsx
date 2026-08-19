@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import { Navigate, Route , Routes } from 'react-router-dom'
-import Projectpage from './pages/Projectpage'
+import HomePage from './pages/HomePage'
 import Projectdetailpage from './pages/Projectdetailpage'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
-import Aboutme from './components/Aboutme'
 
 function App() {
 
@@ -19,8 +17,8 @@ function App() {
       <div className='flex justify-center align-middle'>
         <main>
           <Routes>
-            <Route path='/' element={<Navigate to='/projects' replace />} />
-            <Route path='/projects' element={<Projectpage/>}/>
+            <Route path='/' element={<HomePage/>}/>
+            <Route path='/projects' element={<Navigate to='/' replace />} />
             <Route path='/projects/:slug' element={<Projectdetailpage/>}/>
           </Routes>
         </main> 
