@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <aside className='group fixed left-4 top-1/2 z-10 w-14 -translate-y-1/2 overflow-hidden rounded-2xl border border-tropical-teal bg-white shadow transition-all duration-200 hover:w-36'>
+    <aside className='group fixed left-4 top-1/2 z-10 w-14 -translate-y-1/2 overflow-hidden rounded-2xl border border-tropical-teal bg-white/95 shadow-xl shadow-oceon-deep/15 backdrop-blur transition-all duration-200 hover:w-36'>
       <nav className='flex flex-col items-center gap-2 p-2' aria-label='Social links'>
         <a
           href='https://github.com/UnOriginal00'

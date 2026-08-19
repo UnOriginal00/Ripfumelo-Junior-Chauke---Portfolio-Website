@@ -15,3 +15,14 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+
+body {
+  min-width: 320px;
+  background: #f3fafb;
+  color: #102a43;
+}
+
+::selection {
+  background: #fec601;
+  color: #102a43;
+}

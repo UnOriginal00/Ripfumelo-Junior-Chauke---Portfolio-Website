@@ -14,8 +14,8 @@ function App() {
 
       <Sidebar/>
 
-      <div className='flex justify-center align-middle'>
-        <main>
+      <div className='flex w-full justify-center align-middle'>
+        <main className='w-full'>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/projects' element={<Navigate to='/' replace />} />
