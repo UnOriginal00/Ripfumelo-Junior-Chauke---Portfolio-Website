@@ -10,7 +10,9 @@ const AboutSection = () => {
           alt='Portrait of Ripfumelo Junior Chauke'
         />
         <p>
-          Hello, I am a computer science student who enjoys learning by building practical projects and turning ideas into clear, useful experiences. I like exploring the space where thoughtful design meets reliable software, and I am always looking for a new problem to understand and improve.
+          I am a computer science student who enjoys learning and building practical, hands on projects 
+          gaining valuble real world experience beyond the classroom. Im always looking to imporve and stand out,
+          as well as being an asset to whatever organisation, team or project I am a part of.
         </p>
       </div>
     </section>
