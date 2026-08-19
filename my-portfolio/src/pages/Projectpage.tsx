@@ -12,8 +12,7 @@ const projectpage = (props: Props) => {
       <main>
         <Projects/>
       </main>
-
-      
+ 
     </>
   )
 }

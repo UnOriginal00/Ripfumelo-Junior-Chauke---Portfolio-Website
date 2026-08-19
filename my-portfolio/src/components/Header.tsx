@@ -4,12 +4,10 @@ type Props = {}
 
 const Header = (props: Props) => {
   return (
-    <div>
-      
-      <h2>
+    <div className='flex pt-3 pb-3 justify-center bg-oceon-deep'>  
+      <h1 className='text-2xl'>
         Ripfumelo Junior Chauke
-      </h2>
-    
+      </h1> 
     </div>
   )
 }

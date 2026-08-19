@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-oceon-deep:#2364AA;
+  --color-fresh-sky: #3DA5D9;
+  --color-tropical-teal: #73BFB8;
+  --color-school-bus-yellow: #FEC601;
+  --color-pumpkin-spice: #EA7317;
+}
